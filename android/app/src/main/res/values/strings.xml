@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">me-plus</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+  <bool name="expo_splash_screen_status_bar_translucent">false</bool>
+</resources>

@@ -2,14 +2,22 @@
 
 React Native with a Superbase backend
 
+=== Feature List ===
+
+---- standard setup ----
+
 - Signup with your email
 - Capture you parameters, age, height, current weight and gender
 - Set goal & track your progress. How much weight would you like to loose. 
+
+--- Main features ----
+
 - Scan plate of food and record macros
-- Progress graphs
+- Take torso photo of self, analyze it with A.I and produce a progress report (UI only)
+- Various progress & statistical graphs - towards goal set earlier
+- A.I diet recommendations
 
-
-Stripe paywall:
+RevenueCat paywall:
 
 7 day free trial
 
@@ -17,4 +25,4 @@ Stripe paywall:
 
 69.99 a year
 
-Live time plan of 99.69
+Life time plan of 99.69

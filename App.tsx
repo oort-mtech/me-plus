@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect } from 'react';
+import Navigation from './src/navigation/index';
+import { ErrorBoundary } from './src/components/ErrorBoundary';
 
 export default function App() {
+  useEffect(() => {
+    console.log('App.tsx: App component mounted');
+  }, []);
+
+  console.log('App.tsx: Rendering App component');
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <ErrorBoundary>
+      <Navigation />
       <StatusBar style="auto" />
-    </View>
+    </ErrorBoundary>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

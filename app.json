@@ -13,7 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.meplus.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to camera to scan food plates and track your meals."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +25,28 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.meplus.app",
+      "permissions": [
+        "CAMERA"
+      ],
+      "jsEngine": "hermes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow me-plus to access your camera to scan food plates."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "me-plus"
+      }
     }
   }
 }
